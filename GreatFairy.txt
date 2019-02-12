@@ -1,0 +1,314 @@
+#great_fairy
+use_bpm 120
+#patterns low
+def arp_a_1
+  sleep 0.5
+  play_pattern_timed [:d5, :bf4, :g4], [0.5], amp: 0.5
+end
+def arp_g_1
+  sleep 0.5
+  play_pattern_timed [:c5, :a4, :f4], [0.5], amp: 0.5
+end
+def arp_f_1
+  sleep 0.5
+  play_pattern_timed [:bf4, :g4, :e4], [0.5], amp: 0.5
+end
+def arp_e_1
+  sleep 0.5
+  play_pattern_timed [:a4, :f4, :d4], [0.5], amp: 0.5
+end
+def arp_bf_1
+  sleep 0.5
+  play_pattern_timed [:ef5, :c5, :fs4], [0.5], amp: 0.5
+end
+def arp_c_1
+  sleep 0.5
+  play_pattern_timed [:d5, :bf4, :g4], [0.5], amp: 0.5
+end
+def arp_a_2
+  sleep 0.5
+  play_pattern_timed [:bf4, :g4, :e4], [0.5], amp: 0.5
+end
+
+#patterns high
+def arp_a_1h
+  sleep 0.5
+  play_pattern_timed [:d6, :bf5, :g5], [0.5], amp: 0.4
+end
+def arp_g_1h
+  sleep 0.5
+  play_pattern_timed [:c6, :a5, :f5], [0.5], amp: 0.4
+end
+def arp_f_1h
+  sleep 0.5
+  play_pattern_timed [:bf5, :g5, :e5], [0.5], amp: 0.4
+end
+def arp_e_1h
+  sleep 0.5
+  play_pattern_timed [:a5, :f5, :d5], [0.5], amp: 0.4
+end
+def arp_bf_1h
+  sleep 0.5
+  play_pattern_timed [:ef6, :c6, :fs5], [0.5], amp: 0.4
+end
+def arp_c_1h
+  sleep 0.5
+  play_pattern_timed [:d6, :bf5, :g5], [0.5], amp: 0.4
+end
+def arp_a_2h
+  sleep 0.5
+  play_pattern_timed [:bf5, :g5, :e5], [0.5], amp: 0.4
+end
+#sustained uppers low
+def med_a_1
+  play :a5, decay: 1, amp: 0.72
+  arp_a_1
+  play :g5, decay: 1, amp: 0.72
+  arp_a_1
+  play :fs5, decay: 1, amp: 0.72
+  arp_a_1
+  play :g5,  decay: 1, amp: 0.72
+  arp_a_1
+end
+
+def med_g_1
+  play :g5, decay: 1, amp: 0.72
+  arp_g_1
+  play :f5, decay: 1, amp: 0.72
+  arp_g_1
+  play :e5, decay: 1, amp: 0.72
+  arp_g_1
+  play :f5,  decay: 1, amp: 0.72
+  arp_g_1
+end
+
+def med_f_1
+  play :f5, decay: 1, amp: 0.72
+  arp_f_1
+  play :e5, decay: 1, amp: 0.72
+  arp_f_1
+  play :ds5, decay: 1, amp: 0.72
+  arp_f_1
+  play :e5, decay: 1, amp: 0.72
+  arp_f_1
+end
+
+def med_e_1
+  play :e5, decay: 1, amp: 0.72
+  arp_e_1
+  play :d5, decay: 1, amp: 0.72
+  arp_e_1
+  play :cs5, decay: 1, amp: 0.72
+  arp_e_1
+  play :d5, decay: 1, amp: 0.72
+  arp_e_1
+end
+def med_bf_1
+  play :bf5, decay: 1, amp: 0.72
+  arp_bf_1
+  play :a5, decay: 1, amp: 0.72
+  arp_bf_1
+  play :gs5, decay: 1, amp: 0.72
+  arp_bf_1
+  play :a5, decay: 1, amp: 0.72
+  arp_bf_1
+end
+def med_c_1
+  play :c6, decay: 1, amp: 0.72
+  arp_c_1
+  play :bf5, decay: 1, amp: 0.72
+  arp_c_1
+  play :a5, decay: 1, amp: 0.72
+  arp_c_1
+  play :bf5, decay: 1, amp: 0.72
+  arp_c_1
+end
+def med_a_2
+  play :a5, decay: 1, amp: 0.72
+  arp_a_2
+  play :g5, decay: 1, amp: 0.72
+  arp_a_2
+  play :f5, decay: 1, amp: 0.72
+  arp_a_2
+  play :e5, decay: 1, amp: 0.72
+  arp_a_2
+end
+#sustained uppers high
+def med_a_1h
+  play :a6, decay: 1, amp: 0.6
+  arp_a_1h
+  play :g6, decay: 1, amp: 0.6
+  arp_a_1h
+  play :fs6, decay: 1, amp: 0.6
+  arp_a_1h
+  play :g6,  decay: 1, amp: 0.6
+  arp_a_1h
+end
+
+def med_g_1h
+  play :g6, decay: 1, amp: 0.6
+  arp_g_1h
+  play :f6, decay: 1, amp: 0.6
+  arp_g_1h
+  play :e6, decay: 1, amp: 0.6
+  arp_g_1h
+  play :f6,  decay: 1, amp: 0.6
+  arp_g_1h
+end
+
+def med_f_1h
+  play :f6, decay: 1, amp: 0.6
+  arp_f_1h
+  play :e6, decay: 1, amp: 0.6
+  arp_f_1h
+  play :ds6, decay: 1, amp: 0.6
+  arp_f_1h
+  play :e6, decay: 1, amp: 0.6
+  arp_f_1h
+end
+
+def med_e_1h
+  play :e6, decay: 1, amp: 0.6
+  arp_e_1h
+  play :d6, decay: 1, amp: 0.6
+  arp_e_1h
+  play :cs6, decay: 1, amp: 0.6
+  arp_e_1h
+  play :d6, decay: 1, amp: 0.6
+  arp_e_1h
+end
+def med_bf_1h
+  play :bf6, decay: 1, amp: 0.6
+  arp_bf_1h
+  play :a6, decay: 1, amp: 0.6
+  arp_bf_1h
+  play :gs6, decay: 1, amp: 0.6
+  arp_bf_1h
+  play :a6, decay: 1, amp: 0.6
+  arp_bf_1h
+end
+def med_c_1h
+  play :c7, decay: 1, amp: 0.6
+  arp_c_1h
+  play :bf6, decay: 1, amp: 0.6
+  arp_c_1h
+  play :a6, decay: 1, amp: 0.6
+  arp_c_1h
+  play :bf6, decay: 1, amp: 0.6
+  arp_c_1h
+end
+def med_a_2h
+  play :a6, decay: 1, amp: 0.6
+  arp_a_2h
+  play :g6, decay: 1, amp: 0.6
+  arp_a_2h
+  play :f6, decay: 1, amp: 0.6
+  arp_a_2h
+  play :e6, decay: 1, amp: 0.6
+  arp_a_2h
+end
+
+
+def lefthand
+  #measure1
+  play :bf2, amp: 0.5, release: 8
+  sleep 0.5
+  play_pattern_timed [:bf3, :d4], [0.5], amp: 0.5
+  play :a4, decay: 2.5, amp: 0.5
+  sleep 2.5
+  play_pattern_timed [:bf3, :d4, :a4, :g4, :c5, :a4, :g4, :d4], [0.5], amp: 0.5
+  #measure2
+  play :a2, amp: 0.5, release: 8
+  sleep 0.5
+  play_pattern_timed [:a3, :c4], [0.5], amp: 0.25
+  play :f4, decay: 2.5, amp: 0.5
+  sleep 2.5
+  play_pattern_timed [:a3, :a3, :g4, :f4, :c5, :g4, :f4, :c4], [0.5], amp: 0.5
+  #measure3
+  play :g2, amp: 0.5, release: 8
+  sleep 0.5
+  play_pattern_timed [:g3, :bf3], [0.5], amp: 0.25
+  play :f4, decay: 2.5, amp: 0.5
+  sleep 2.5
+  play_pattern_timed [:g3, :g3, :f4, :e4, :g4, :e4, :c4, :bf3], [0.5], amp: 0.5
+  #measure4
+  play :f2, amp: 0.5, release: 8
+  sleep 0.5
+  play_pattern_timed [:f3, :a3], [0.5], amp: 0.5
+  play :e4, decay: 2.5, amp: 0.5
+  sleep 2.5
+  play_pattern_timed [:f3, :f3, :e4, :d4, :g4, :f4, :c5, :a4], [0.5], amp: 0.5
+  #measure5
+  play :bf2,amp: 0.5,  release: 8
+  sleep 0.5
+  play_pattern_timed [:bf3, :d4], [0.5], amp: 0.5
+  play :a4, decay: 2.5, amp: 0.5
+  sleep 2.5
+  play_pattern_timed [:bf3, :d4, :a4, :g4, :d5, :a4, :g4, :d4], [0.5], amp: 0.5
+  #measure6
+  play :a2, amp: 0.5,  release: 8
+  sleep 0.5
+  play_pattern_timed [:a3, :c4], [0.5], amp: 0.5
+  play :c5, decay: 2.5, amp: 0.5
+  sleep 2.5
+  play_pattern_timed [:d4, :d4, :c5, :a4, :ef5, :d5, :c5, :bf4], [0.5], amp: 0.5
+  #measure7
+  play :g2, amp: 0.5,  release: 8
+  sleep 0.5
+  play_pattern_timed [:g3, :d4], [0.5], amp: 0.5
+  play :bf4, decay: 2.5, amp: 0.5
+  sleep 2.5
+  play_pattern_timed [:g3, :g3, :bf4, :a4, :c5, :bf4, :g4, :d4], [0.5], amp: 0.5
+  #measure8
+  play :c3, amp: 0.5,  release: 8
+  sleep 0.5
+  play_pattern_timed [:c4, :g4], [0.5], amp: 0.5
+  play :bf4, decay: 2.5
+  sleep 2.5
+  play_pattern_timed [:c4, :c4, :bf4, :g4, :e5, :d5, :g5, :e5], [0.5], amp: 0.5
+end
+
+#noise
+def snoise
+  use_synth :pnoise
+  play :bf2, release: 10, attack_level: 0.1, sustain: 5, sustain_level: 0.25, decay: 9, decay_level: 0.1
+  sleep 10
+end
+def movinOnUp
+  med_a_1h
+  med_g_1h
+  med_f_1h
+  med_e_1h
+  med_a_1h
+  med_bf_1h
+  med_c_1h
+  med_a_2h
+end
+
+#workspace
+live_loop :ambien do
+  snoise
+end
+
+live_loop :arp do
+  with_fx :reverb, mix: 0.5, room: 0.8, pre_mix: 1 do
+    #intro
+    med_a_1
+    med_g_1
+    med_f_1
+    med_e_1
+    med_a_1
+    med_bf_1
+    med_c_1
+    med_a_2
+    #movinOnUp
+    sleep 8
+    movinOnUp
+    movinOnUp
+  end
+end
+live_loop :left do
+  sleep 72
+  lefthand
+  lefthand
+end
